@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<sea>
+	<paths>
+		<path id="cherrice" value="cherrice.xml"></path>
+		<path id="state-config" value="state.properties"></path>
+		<path id="daemon" value="daemon.properties"></path>
+		<path id="cherroot" value="cherroot.xml"></path>
+		<path id="external" value="external.xml"></path>
+		<path id="anchorList" value="anchor_list.xml"></path>
+		<path id="fortuneLevel" value="fortune_level_config.xml"></path>
+	</paths>
+	<ioc>
+		<packages>
+			<package>jdk.*</package>
+			<package>ent.*</package>
+			<package>com.html.*</package>
+		</packages>
+		<beans>
+			<!--<bean id="livingRedisSubscriber" class="com.yy.ent.mp.service.subscribe.LivingRedisSubscriber">
+				<method name="init">
+					<param value="5" type="int"></param>
+				</method>
+			</bean>-->
+			<bean id="liveHandlerInital" class="ent.server.LiveHandlerInital">
+				<method name="init">
+					<param value="5"></param>
+				</method>
+			</bean>
+			<bean id="testService1" class="sea.example.service.TestService">
+
+			</bean>
+			<bean id="testService2" class="sea.example.service.TestService">
+
+			</bean>
+		</beans>
+	</ioc>
+</sea>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<sea>
+	<paths>
+		<path id="sea" value="sea.xml"></path>
+	</paths>
+	<ioc>
+		<packages>
+			<package>com.sea.ioc.example.*</package>
+		</packages>
+		<beans>
+			<bean id="testService1" class="com.wolfbe.seacos.example.service.TestService">
+				<method name="init">
+					<param value="init testService1"></param>
+				</method>
+			</bean>
+			<bean id="testService2" class="com.wolfbe.seacos.example.service.TestService">
+				<method name="finish">
+					<param value="finish testService2"></param>
+				</method>
+			</bean>
+
+			<bean id="excludeService1" class="com.wolfbe.seacos.example.service.ExcludeService">
+				<method name="init">
+					<param value="init testService1"></param>
+				</method>
+			</bean>
+			<bean id="testService1" class="com.wolfbe.seacos.example.service.ExcludeService">
+				<method name="finish">
+					<param value="finish testService2"></param>
+				</method>
+			</bean>
+		</beans>
+	</ioc>
+</sea>
