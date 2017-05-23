@@ -3,7 +3,7 @@ package com.wolfbe.seacos.aop;
 import java.lang.reflect.Method;
 
 /**
- * @author laochunyu
+ * @author Andy
  * @version 1.0
  * @date 2016/7/7
  */

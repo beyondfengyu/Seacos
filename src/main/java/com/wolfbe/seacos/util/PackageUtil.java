@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
 /**
  * 包的工具类，用于获取包的类文件
  *
- * @author laochunyu
+ * @author Andy
  * @version 1.0
  * @date 2016/6/27
  */

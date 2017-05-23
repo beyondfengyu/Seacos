@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * 存储ClassBean实例
  *
- * @author laochunyu
+ * @author Andy
  * @version 1.0
  * @date 2016/6/30
  */

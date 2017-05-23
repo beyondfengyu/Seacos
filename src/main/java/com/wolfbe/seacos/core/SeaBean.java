@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * 装载配置文件里面解析出来的所有Bean信息
  *
- * @author laochunyu
+ * @author Andy
  * @version 1.0
  * @date 2016/6/24
  */

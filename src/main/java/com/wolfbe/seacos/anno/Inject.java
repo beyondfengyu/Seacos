@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * 容器根据该注解为相应的类注入依赖
  *
- * @author laochunyu
+ * @author Andy
  * @date 2016/6/24
  * @desc
  */

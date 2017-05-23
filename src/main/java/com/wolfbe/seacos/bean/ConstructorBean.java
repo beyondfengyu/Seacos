@@ -3,7 +3,7 @@ package com.wolfbe.seacos.bean;
 import java.util.LinkedHashSet;
 
 /**
- * @author laochunyu
+ * @author Andy
  * @version 1.0
  * @date 2016/6/28
  */

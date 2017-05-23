@@ -4,6 +4,7 @@ import com.wolfbe.seacos.core.BeanFactory;
 import com.wolfbe.seacos.core.Sea;
 import com.wolfbe.seacos.example.listener.BeforeListener;
 import com.wolfbe.seacos.example.listener.FinishListener;
+import com.wolfbe.seacos.example.service.Addr;
 import com.wolfbe.seacos.example.service.ExcludeService;
 import com.wolfbe.seacos.example.service.TestService;
 import org.slf4j.Logger;
@@ -14,7 +15,7 @@ import java.net.URI;
 import java.net.URL;
 
 /**
- * @author laochunyu
+ * @author Andy
  * @version 1.0
  * @date 2016/7/12
  */
@@ -50,14 +51,15 @@ public class SeaTest {
 //        testService1.invokeAddr("testService1");
 //        testService2.invokeAddr("testService2");
         testService3.invokeAddr("testService3");
-
-        ExcludeService excludeService1 = (ExcludeService) BeanFactory.getClassBean(BeanFactory.getBeanKey("excludeService1", "ExcludeService"));
-        ExcludeService excludeService2 = (ExcludeService) BeanFactory.getClassBean(BeanFactory.getBeanKey("excludeService2", "ExcludeService"));
-        ExcludeService excludeService3 = (ExcludeService) BeanFactory.getClassBean(ExcludeService.class);
-
-        excludeService1.invokeExclude("excludeService1");
-        excludeService2.invokeExclude("excludeService2");
-        excludeService3.invokeExclude("excludeService3");
+        Addr addr = (Addr) BeanFactory.getClassBean(Addr.class);
+        addr.printAddr();
+//        ExcludeService excludeService1 = (ExcludeService) BeanFactory.getClassBean(BeanFactory.getBeanKey("excludeService1", "ExcludeService"));
+//        ExcludeService excludeService2 = (ExcludeService) BeanFactory.getClassBean(BeanFactory.getBeanKey("excludeService2", "ExcludeService"));
+//        ExcludeService excludeService3 = (ExcludeService) BeanFactory.getClassBean(ExcludeService.class);
+//
+//        excludeService1.invokeExclude("excludeService1");
+//        excludeService2.invokeExclude("excludeService2");
+//        excludeService3.invokeExclude("excludeService3");
 
         BeanFactory.saveBean("",null);
 

@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
 
 /**
  * 标识AOP切面用哪些类做切入
- * @author laochunyu
+ * @author Andy
  * @version 1.0
  * @date 2016/7/7
  */

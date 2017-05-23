@@ -17,7 +17,7 @@ import java.util.*;
  * 能够实现自动实例对象，为实例注入变量；
  * 使用AOP注解功能
  *
- * @author laochunyu
+ * @author Andy
  * @date 2016/6/24
  * @version 1.0
  */

@@ -4,7 +4,7 @@ package com.wolfbe.seacos.example.service;
 import com.wolfbe.seacos.anno.Exclude;
 
 /**
- * @author laochunyu
+ * @author Andy
  * @version 1.0
  * @date 2016/7/8
  */

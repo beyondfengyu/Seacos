@@ -2,7 +2,7 @@ package com.wolfbe.seacos.bean;
 
 /**
  *
- * @author laochunyu
+ * @author Andy
  * @version 1.0
  * @date 2016/6/28
  */
